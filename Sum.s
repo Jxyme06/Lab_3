@@ -9,10 +9,10 @@
 .globl sum_numbers
 
 sum_numbers:
-    xorq %rax, %rax         # Clear the rax register
+    xorq %rax, %rax         # Clear the rax register which will hold the total sum and later be returned
 
 sum_loop:
-    addq (%rsi), %rax
+    addq (%rsi), %rax       # Add the value of that index in the array to the total
     addq $4, %rsi
     decq %rdi
     jz done

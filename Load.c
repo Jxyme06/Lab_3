@@ -5,13 +5,13 @@
 int sum_numbers(int total_numbers, int number_array[]);
 
 int main() {
-
+    // Initialize values to be used to read from the file
     int total_numbers;
     int number_array[100]; 
     FILE *dataptr;
 
+    // Open the file and 
     dataptr = fopen("data.txt", "r");
-
     fscanf(dataptr, "%d", &total_numbers);
 
     int i = 0;
